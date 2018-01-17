@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/mainLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DB초기화"
+            android:id="@+id/button3"
+            android:onClick="onDatabaseDropButtonClicked"
+            android:background="@drawable/back" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SMS내용"
+            android:id="@+id/button1"
+            android:onClick="tabButton1Clicked"
+            android:background="@drawable/back" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SMS리스트"
+            android:id="@+id/button2"
+            android:onClick="tabButton2Clicked"
+            android:background="@drawable/back" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="고객관리"
+            android:id="@+id/button4"
+            android:onClick="tabButton3Clicked"
+            android:background="@drawable/back" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text= "Web"
+            android:id="@+id/button5"
+            android:onClick="tabButton4Clicked"
+            android:background="@drawable/back" />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pager"
+        android:layout_below="@+id/buttonWeb" />
+</LinearLayout>
